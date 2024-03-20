@@ -1,0 +1,220 @@
+/*
+Theme Name: ozcantadilat-two
+Theme URI: https://wordpress.org/themes/ozcantadilat-two/
+Author: Oksana Ozcan
+Author URI: https://wordpress.org/oksanaozcan
+Description: This theme is for individual use only.
+Requires at least: 6.4
+Tested up to: 6.4
+Requires PHP: 7.0
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: ozcantadilat.com
+Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready.
+*/
+
+@font-face {
+  font-family: 'roboto-bold';
+  src: url('../assets/fonts/Roboto-Bold.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-light';
+  src: url('../assets/fonts/Roboto-Light.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-medium';
+  src: url('../assets/fonts/Roboto-Medium.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-regular';
+  src: url('../assets/fonts/Roboto-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'roboto-thin';
+  src: url('../assets/fonts/Roboto-Thin.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+}
+
+/* Sections
+    ========================================================================== */
+
+/**
+  * Remove the margin in all browsers.
+  */
+
+body {
+  background: url('assets/images/overlay.jpg') center center no-repeat; 
+  background-size: cover;  
+}
+.m-0 {
+  margin: 0 !important;
+}
+
+.p-0 {
+  padding: 0 !important;
+}
+
+.horizontal-content {
+  display: inline-flex;
+  align-items: center;
+}
+.horizontal-content span {
+  margin-left: 5px;
+}
+
+/* Logo animation */
+
+.logo-box {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  box-sizing: border-box;
+}
+
+.logo-box h1 {
+  margin: 0;
+  padding: 0;
+  color: #ffc107;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  font-size: 18px;
+}
+
+.logo-box::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #ffc107;
+  border-bottom: 4px solid #ffc107;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0); 
+}
+
+.logo-box:hover::before {
+  transform: scaleX(1);
+}
+
+.logo-box::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #ffc107;
+  border-left: 4px solid #ffc107;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+.logo-box:hover::after {
+  transform: scaleY(1);
+  transition-delay: 0.5s;
+}
+
+.logo-rotated {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: block;
+  transform: rotate(45deg);
+  box-sizing: border-box;
+}
+
+.logo-rotated::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-top: 4px solid #ffc107;
+  border-bottom: 4px solid #ffc107;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleX(0);
+}
+
+.logo-box:hover .logo-rotated::before {
+  transform: scaleX(1);
+  transition-delay: 1s;
+}
+
+.logo-rotated::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-right: 4px solid #ffc107;
+  border-left: 4px solid #ffc107;
+  box-sizing: border-box;
+  transition: 0.5s;
+  transform: scaleY(0);
+}
+
+.logo-box:hover .logo-rotated::after {
+  transform: scaleY(1);
+  transition-delay: 1.5s;
+}
+
+/* Logo animation end */
+
+/* Main Slider */
+.slider-gap {
+  width: 100%;
+  height: 2px;
+  background-color: #ffc107;
+}
+
+.slide-animation {
+  opacity: 0;
+}
+
+.slide-animation.show {
+  animation: slideInLeft 0.5s ease-in-out;
+  opacity: 1;
+}
+
+@keyframes slideInLeft {
+  0% {
+      transform: translateX(-100%);
+      opacity: 0;
+  }
+  100% {
+      transform: translateX(0);
+      opacity: 1;
+  }
+}
+
+/* Main slider end */
+
+
