@@ -1,5 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
+  AOS.init();
 
+  // Main Slider
   const carousel = document.getElementById("main-carousel");  
 
   carousel.addEventListener("slid.bs.carousel", function() {
@@ -13,5 +15,6 @@ document.addEventListener("DOMContentLoaded", function() {
     const caption = activeItem.querySelector(".carousel-caption");      
     caption.classList.remove("show");
   });
+  // Main slider end
 
 });

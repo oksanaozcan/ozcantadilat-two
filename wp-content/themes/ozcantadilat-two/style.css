@@ -217,4 +217,95 @@ body {
 
 /* Main slider end */
 
+/* Service icons */
 
+.service-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.service-icon {
+  border: 2px solid #E2E3E5;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.service-icon i {  
+  font-size: 48px;
+  color: #ffc107;
+  transition: all 0.5s;
+}
+
+.ornament {
+  display: flex;
+  flex-direction: row;
+  width: 60px;
+  height: 30px;
+  position: relative;
+  margin-bottom: 30px;
+}
+.ornament div {
+  width: 50%;
+  height: 100%;  
+}
+.ornament-line {
+  border-right: 2px solid #E2E3E5;
+}
+.ornament::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border: 2px solid #E2E3E5;
+  top: 100%;
+  left: calc(50% - 10px);
+  border-radius: 50%;
+}
+
+.service-content h6 {
+  font-size: 1.2rem;
+  text-transform: uppercase;
+}
+
+.service-line {
+  width: 40%;
+  height: 2px;
+  background-color: #ffc107;
+  margin: 10px;
+}
+.service-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Text services section*/
+.text-services h6 {
+  font-size: 1.2rem;
+  text-transform: uppercase;  
+}
+
+.works-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+}
+
+.works-list a:hover {
+  background-color: #6c757d !important;
+  color: #fff;
+  transition: all 0.4s;
+}
+
+.works-list i {
+  font-size: 25px;
+  padding-right: 10px;
+  color: #ffc107;
+  position: relative;
+}
