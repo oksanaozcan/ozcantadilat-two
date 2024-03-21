@@ -50,6 +50,7 @@ Tags: one-column, custom-menu, custom-logo, featured-images, translation-ready.
 }
 
 html {
+  font-size:1.3em;
   line-height: 1.15; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
 }
@@ -308,4 +309,24 @@ body {
   padding-right: 10px;
   color: #ffc107;
   position: relative;
+}
+
+.smm-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;  
+  padding-left: 15px !important;
+}
+
+@media screen {
+  
+}
+
+.smm-list {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; 
 }
