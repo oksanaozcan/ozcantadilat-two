@@ -23,6 +23,7 @@ register_nav_menus(
 );
 
 add_theme_support('custom-logo');
+add_theme_support('title-tag');
 
 function turkish_to_latin_permalink( $permalink, $post ) {
   $permalink = strtolower($permalink);

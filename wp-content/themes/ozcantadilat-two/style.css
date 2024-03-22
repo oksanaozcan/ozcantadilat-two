@@ -319,10 +319,6 @@ body {
   padding-left: 15px !important;
 }
 
-@media screen {
-  
-}
-
 .smm-list {
   width: 100%;
   display: flex;
@@ -330,3 +326,34 @@ body {
   justify-content: center;
   align-items: center; 
 }
+
+/* 404 Page */
+
+.icon-404 {
+  border: 2px solid #E2E3E5;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  position: relative;
+}
+
+.icon-404 i {
+  font-size: 48px;
+  color: #ffc107;
+  transition: all 0.5s;
+}
+.widgettitle {
+  text-transform: uppercase;
+  font-size: small;
+}
+.widget ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  font-size: medium;
+  width: 100%;
+  justify-content: space-around;
+}
+/* .widget > ul > li.cat-item-18 {
+  display: none;
+} */
