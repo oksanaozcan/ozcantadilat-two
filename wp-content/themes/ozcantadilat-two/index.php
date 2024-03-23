@@ -26,7 +26,7 @@
               </div>
             </section>
             <section>
-              Latest photos
+              RECENT NEWS
               <button>View all</button>
             </section>
             <section>
