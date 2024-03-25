@@ -39,6 +39,7 @@ wp-config.php
 /wp-content/themes/ozcantadilat-two/assets/images*/
 /wp-content/themes/ozcantadilat-two/assets/js/bootstrap.bundle.min.js
 /wp-content/themes/ozcantadilat-two/assets/js/aos.js
+/wp-content/themes/ozcantadilat-two/assets/js/bs5-lightbox.js
 /wp-content/themes/ozcantadilat-two/inc/bootstrap_5_wp_nav_menu_walker.php
 
 # Log files
