@@ -12,6 +12,7 @@
       $args = array(
           'post_type'      => 'post',
           'posts_per_page' => 3,
+          'category__not_in' => array(1,18,19,20,40),
       );
 
       $query = new WP_Query( $args );
@@ -32,7 +33,7 @@
 
     <div class="row justify-content-center py-4">
       <div class="col-2" data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-        <a class="btn btn-warning" href="<?php echo get_category_link( 22 ); ?>" role="button">Hepsini gör</a>
+        <a class="btn btn-warning rounded-pill" href="<?php echo get_category_link( 22 ); ?>" role="button">Hepsini gör</a>
       </div>                  
     </div> 
     

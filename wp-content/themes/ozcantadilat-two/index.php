@@ -25,22 +25,8 @@
                 </div>
               </div>
             </section>
-              <?php get_template_part('parts/recent-posts-section'); ?>               
-            <section>
-              <div class="container bg-secondary-subtle">
-                <div class="row px-4 py-4">
-                  <div class="col">
-                    <div class="works-wrapper" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                      <h6 class="text-center text-uppercase">Görüşler</h6>
-                      <div class="service-line"></div>
-                    </div>                    
-                  </div>
-                </div>         
-                <div class="row">
-                  
-                </div>       
-              </div>
-            </section>
+            <?php get_template_part('parts/recent-posts-section'); ?>                                      
+            <?php get_template_part('parts/review-slider'); ?>
             <section>
               Our Team
             </section>
