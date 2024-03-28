@@ -189,6 +189,16 @@ body {
 
 /* Logo animation end */
 
+/* Menu area */
+.dropdown-item:focus {
+  outline: #ffc107;
+  background-color: #ffc107;
+}
+
+.dropdown-item.active {
+  background-color: #ffc107;
+}
+
 /* Main Slider */
 .slider-gap {
   width: 100%;
@@ -369,4 +379,12 @@ body {
   font-size: 40px;
   color: #ffc107;
   transition: all 0.5s;
+}
+
+.widget.widget_recent_entries {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
 }
