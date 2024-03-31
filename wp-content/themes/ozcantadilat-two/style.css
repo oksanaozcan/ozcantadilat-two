@@ -63,7 +63,7 @@ html {
   */
 
 body {
-  background: url('assets/images/overlay.jpg') center center no-repeat; 
+  background: url('assets/images/overlay-light.jpg') center center no-repeat; 
   background-size: cover;  
 }
 .m-0 {
@@ -387,4 +387,28 @@ body {
   grid-template-rows: 1fr;
   grid-column-gap: 10px;
   grid-row-gap: 10px;
+}
+/* Review slider */
+.review-ornament {
+  position: relative;    
+}
+
+.review-ornament::before {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #fff;
+  left: 90%;
+  bottom: 80%;
+  border: #6c757d solid 2px;
+  border-radius: 50%;
+}
+
+.footer-info .container {
+  background-color: #ffc107;
+}
+
+.footer-info i {
+  color: #fff;
 }

@@ -27,9 +27,7 @@
             </section>
             <?php get_template_part('parts/recent-posts-section'); ?>                                      
             <?php get_template_part('parts/review-slider'); ?>
-            <section>
-              Our Team
-            </section>
+            <?php get_template_part('parts/footer-info'); ?>            
             <section>
               Copyright
             </section>

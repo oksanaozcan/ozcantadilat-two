@@ -7,7 +7,7 @@
   <title><?php bloginfo('name'); echo " | "; bloginfo('description'); ?></title>
 </head>
 <body <?php body_class(); ?>>
-  <div class="bg-dark bg-gradient bg-opacity-25">
+  <div class="bg-warning bg-gradient bg-opacity-10">
     <header>
 
       <?php get_template_part('parts/top-bar'); ?>       
