@@ -27,10 +27,7 @@
             </section>
             <?php get_template_part('parts/recent-posts-section'); ?>                                      
             <?php get_template_part('parts/review-slider'); ?>
-            <?php get_template_part('parts/footer-info'); ?>            
-            <section>
-              Copyright
-            </section>
+            <?php get_template_part('parts/footer-info'); ?>                       
           </main>
       </div>
 <?php get_footer(); ?>
