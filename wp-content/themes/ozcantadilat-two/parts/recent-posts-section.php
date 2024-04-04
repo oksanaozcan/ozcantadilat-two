@@ -12,7 +12,7 @@
       $args = array(
           'post_type'      => 'post',
           'posts_per_page' => 3,
-          'category__not_in' => array(1,18,19,20,40),
+          'category__not_in' => array(1,18,19,20,40,41),
       );
 
       $query = new WP_Query( $args );

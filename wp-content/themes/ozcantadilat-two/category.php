@@ -1,6 +1,7 @@
 <?php get_header(); ?>
 
 <?php get_template_part('parts/breadcrumbs-section'); ?>
+
 <section>
   <div class="container bg-light text-center py-4">
     <div class="row py-4 text-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
@@ -11,7 +12,16 @@
     </div>   
   </div>
 
-  <?php get_template_part('parts/lightbox'); ?>
+  <?php
+    $category = get_queried_object();
+    
+    if ($category->slug !== 'services') {
+      get_template_part('parts/lightbox');
+    } else {
+      get_template_part('parts/all-services');
+    }
+  ?>
 
 </section>
-<?php get_footer(); ?> 
+
+<?php get_footer(); ?>
