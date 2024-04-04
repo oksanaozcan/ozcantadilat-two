@@ -25,6 +25,7 @@
                 </div>
               </div>
             </section>
+            <?php get_template_part('parts/work-stagies'); ?>                                      
             <?php get_template_part('parts/recent-posts-section'); ?>                                      
             <?php get_template_part('parts/review-slider'); ?>
             <?php get_template_part('parts/footer-info'); ?>                       

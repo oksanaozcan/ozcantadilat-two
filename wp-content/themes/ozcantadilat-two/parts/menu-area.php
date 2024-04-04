@@ -1,5 +1,5 @@
 <section id="menu-area">          
-    <nav class="container navbar navbar-expand-lg navbar-light bg-light py-3">
+    <nav class="container navbar navbar-expand-lg navbar-light bg-body py-3">
       <div class="container-fluid mx-4">
         <!-- Logo area -->
         <div class="navbar-brand">
