@@ -1,4 +1,4 @@
-<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-dark-subtle">
+<div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-body-tertiary">
     <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100" style="padding-left: 1rem;">                
         <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">                                                              
           <li class="w-100 mb-1">
@@ -113,7 +113,7 @@
           </li>   
         </ul>    
         
-        <div class="bg-white text-dark text-center p-2 rounded mb-2">                    
+        <div class="bg-white text-dark text-center p-2 rounded mb-2 ms-1 d-none d-sm-block border border-1">                    
           <div class="m-auto mb-2 fs-3 border border-warning rounded-circle d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
             <div>
               <i class="fa-solid fa-wallet"></i>

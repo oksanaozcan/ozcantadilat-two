@@ -1,6 +1,6 @@
 <section>
     <div class="container px-4 py-4 bg-body-tertiary">
-      <div class="row row-cols-3">
+      <div class="row row-cols-md-auto justify-content-md-center">
 
         <?php
           $my_posts = get_posts( [
@@ -17,7 +17,9 @@
         ?>      
 
           <div class="col my-2">
-              <a href="<?php echo get_permalink($post->ID); ?>" class="link-offset-2 link-underline link-underline-opacity-0">
+              <a href="<?php echo get_permalink($post->ID); ?>" class="link-offset-2 link-underline link-underline-opacity-0"
+                data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+              >
                   <div class="card" style="width: 18rem;">
                       <?php
                           $thumbnail_id = get_post_thumbnail_id( $post->ID );

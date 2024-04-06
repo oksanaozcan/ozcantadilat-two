@@ -51,6 +51,6 @@ document.addEventListener("DOMContentLoaded", function() {
   wrappers.forEach(wrapper => {
       observer.observe(wrapper);
   });
- 
+  // Progress bar end.
 
 });

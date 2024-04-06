@@ -412,3 +412,11 @@ body {
 .footer-info i {
   color: #fff;
 }
+
+.accordion-button:not(.collapsed) {
+  background-color: #ffc107 !important;
+}
+.accordion-button:not(.collapsed) i {
+  background-color: white !important;
+  padding: 2px;
+}
