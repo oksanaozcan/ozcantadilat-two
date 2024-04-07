@@ -5,7 +5,12 @@
     <div class="container">
       <div class="row flex-nowrap">
          <?php get_template_part('parts/sidebar-services')?>
-          <div class="col py-3 bg-body-tertiary">
+          <div class="col py-3 bg-body-tertiary" id="post-<?php the_ID();?>">
+
+            <?php
+            while(have_posts()):
+              the_post();
+            ?>
 
              <div class="d-flex justify-content-center gap-2 flex-wrap">
               <img class="d-block" src="https://via.placeholder.com/640x480.png/004466?text=animals+omnis" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
@@ -87,6 +92,8 @@
               </div>
 
             </div>
+
+            <?php endwhile; ?>
 
           </div>
       </div>

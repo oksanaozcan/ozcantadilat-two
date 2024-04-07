@@ -17,6 +17,7 @@
     
     if ($category->slug !== 'services') {
       get_template_part('parts/lightbox');
+      get_template_part('parts/pagination');      
     } else {
       get_template_part('parts/all-services');
     }

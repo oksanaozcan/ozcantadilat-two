@@ -38,10 +38,7 @@
                 'walker' => new bootstrap_5_wp_nav_menu_walker()
             ));
             ?>
-            <form class="d-flex">
-              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-              <button class="btn btn-outline-warning" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
-          </form>            
+            <?php get_search_form(); ?>         
         </div>   
 
       </div>
