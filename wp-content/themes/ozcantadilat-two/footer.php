@@ -48,7 +48,7 @@
             </div>
           </div>
           <div class="row bg-white px-4 py-2 text-center">
-            <small>© Copyright 2024</small>
+            <small><?php echo get_theme_mod('set_copyright', '© Copyright X - All Rights Reserved'); ?></small>
           </div>
         </div>
     </footer>
