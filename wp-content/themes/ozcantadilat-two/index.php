@@ -16,7 +16,7 @@
                   </div>
                   <div class="col-12 col-md-4 g-0">
                     <div data-aos="slide-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="900">
-                      <img class="w-100 object-fit-fill" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/works_img.jpg" alt="works"/>
+                      <img class="w-100 object-fit-fill" src="<?php echo get_theme_mod('set_progressbars_image') ?>" alt="works"/>
                     </div>
                   </div>                  
                   <div class="col-12 col-md-5 g-0 pt-4">

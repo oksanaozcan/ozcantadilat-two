@@ -1,6 +1,6 @@
 <?php
 
-require get_template_directory() . '/inc/customizer.php';
+require_once get_template_directory() . '/inc/customizer.php';
 
 require_once get_template_directory() . '/inc/bootstrap_5_wp_nav_menu_walker.php';
 require_once get_template_directory() . '/inc/custom_breadcrumbs.php';
