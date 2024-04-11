@@ -7,7 +7,7 @@
             the_custom_logo();
           } else {
             ?>
-              <a href="<?php echo get_home_url(); ?>">
+              <a href="<?php echo esc_url(get_home_url()); ?>">
                 <div class="logo-box">
                   <span class="logo-rotated"></span>
                   <h1>

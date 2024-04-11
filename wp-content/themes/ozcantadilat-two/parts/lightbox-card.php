@@ -16,9 +16,9 @@
     ?>                   
       <a
         class="d-block px-1 link-secondary link-offset-2 link-underline-opacity-0 link-underline-opacity-100-hover"
-        href="<?php echo get_home_url().'/tag'.'/'.$tag->slug; ?>"
+        href="<?php echo esc_url(get_home_url().'/tag'.'/'.$tag->slug); ?>"
       >               
-        <small><?php echo $tag->name; ?></small>
+        <small><?php echo esc_html($tag->name); ?></small>
     </a>                                         
     <?php
       }

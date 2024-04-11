@@ -59,7 +59,7 @@ Template name: 404 Page.
         </div>
 
         <div>
-          <a href="<?php echo get_home_url(); ?>" class="btn btn-lg btn-warning" type="button">Eve gitmek</a>
+          <a href="<?php echo esc_url(get_home_url()); ?>" class="btn btn-lg btn-warning" type="button">Eve gitmek</a>
         </div>     
 
       </div>
