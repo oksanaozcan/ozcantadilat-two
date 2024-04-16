@@ -12,7 +12,7 @@
           <div class="d-flex flex-column px-2">
             <div class="text-white">
               <p class="text-wrap m-0">Phone:</p>
-              <span>+90 553 872 03 19</span>
+              <span><?php echo esc_html(get_theme_mod('phone_number_setting', '90 553 872 03 19')); ?></span>
             </div>                                             
           </div>               
         </div>                  
@@ -28,7 +28,7 @@
           <div class="d-flex flex-column px-2">
             <div class="text-white">
               <p class="text-wrap m-0">Location:</p>
-              <span>Aydın Didim, Akbük</span>
+              <span><?php echo esc_html(get_theme_mod('location_setting', 'Aydın Didim')); ?></span>
             </div>                                             
           </div>               
         </div>                  
@@ -44,7 +44,7 @@
           <div class="d-flex flex-column px-2">
             <div class="text-white">
               <p class="text-wrap m-0">Email:</p>
-              <span>help@ozcantadilat.com</span>
+              <span><?php echo esc_html(get_theme_mod('email_setting', 'help@ozcantadilat.com')); ?></span>
             </div>                                             
           </div>               
         </div>                  

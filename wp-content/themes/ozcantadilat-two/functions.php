@@ -48,7 +48,7 @@ add_filter( 'pre_post_link', 'turkish_to_latin_permalink', 10, 2 );
 function custom_repeatable_list_meta_boxes() {
   add_meta_box(
       'custom_repeatable_list_meta_box',
-      'Repeatable List',
+      'Plan & Details List',
       'custom_repeatable_list_meta_box_callback',
       'post',
       'normal',
@@ -57,7 +57,7 @@ function custom_repeatable_list_meta_boxes() {
 
   add_meta_box(
     'custom_repeatable_list_2_meta_box',
-    'Repeatable List 2',
+    'Advantages of current service list',
     'custom_repeatable_list_2_meta_box_callback',
     'post',
     'normal',

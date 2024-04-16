@@ -5,7 +5,7 @@
               <h4 class="fs-6">Hakkımızda</h4>
               <?php get_template_part('parts/two-colour-line'); ?>  
               <p>
-                12 yılı aşkın deneyimimiz ve müşteri memnuniyetine gerçek anlamda odaklanmamızla, bir sonraki tadilat veya ev onarımınız için bize güvenebilirsiniz.
+              <?php echo esc_html(get_theme_mod('set_footer_text', '12 yılı aşkın deneyimimiz ve müşteri memnuniyetine gerçek anlamda odaklanmamızla, bir sonraki tadilat veya ev onarımınız için bize güvenebilirsiniz.')); ?>                
               </p>
               <div class="btn-group" role="group" aria-label="Basic example">
                 <a target="_blank" href="<?php the_field('facebook'); ?>" class="btn btn-warning text-white" style="border-radius: 0;"><i class="fa-brands fa-facebook"></i></a>
@@ -26,7 +26,7 @@
                   $footer_categories = get_categories($footer_args);
                   foreach ($footer_categories as $cat) {
                       ?>
-                      <a href="<?php echo get_category_link($cat->term_id) ?>" class="btn btn-outline-secondary m-1" style="border-radius: 0;"><small><?php echo $cat->name ?></small></a>                              
+                      <a href="<?php echo esc_url(get_category_link($cat->term_id)); ?>" class="btn btn-outline-secondary m-1" style="border-radius: 0;"><small><?php echo esc_html($cat->name);  ?></small></a>                              
                       <?php
                   }
                   ?>
@@ -40,7 +40,7 @@
                 $footer_tags = get_tags(array('hide_empty' => true));
                 foreach ($footer_tags as $tag) {
                     ?>
-                    <a href="<?php echo get_tag_link($tag->term_id); ?>" class="btn btn-outline-secondary m-1" style="border-radius: 0;"><small><?php echo $tag->name; ?></small></a>
+                    <a href="<?php echo esc_url(get_tag_link($tag->term_id)); ?>" class="btn btn-outline-secondary m-1" style="border-radius: 0;"><small><?php echo esc_html($tag->name); ?></small></a>
                     <?php
                 }
                 ?>

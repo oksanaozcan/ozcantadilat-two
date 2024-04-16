@@ -14,9 +14,9 @@
 
              <div class="d-flex justify-content-center gap-2 flex-wrap">
               <img class="d-block" src="<?php the_field('image_left'); ?>" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
-                style="max-width: 100%; width: 450px; height: 320px;"/>
+                style="max-width: 100%; width: 450px; height: 400px; object-fit:contain;"/>
               <img class="d-block" src="<?php the_field('image_right'); ?>" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
-                style="max-width: 100%; width: 450px; height: 320px;"/>
+                style="max-width: 100%; width: 450px; height: 400px; object-fit:contain;"/>
              </div>
 
             <div>

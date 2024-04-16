@@ -23,7 +23,7 @@
                   <div class="card" style="width: 18rem;">
                       <?php
                           $thumbnail_id = get_post_thumbnail_id( $post->ID );
-                          $image = wp_get_attachment_image( $thumbnail_id, 'medium', false, array( 'class' => 'card-img-top', 'alt' => 'service image', 'style' => 'height: 250px;' ) );
+                          $image = wp_get_attachment_image( $thumbnail_id, 'medium', false, array( 'class' => 'card-img-top', 'alt' => 'service image', 'style' => 'height: 250px; object-fit: cover;' ) );
                           if ( $image ) {
                               echo $image;
                           }

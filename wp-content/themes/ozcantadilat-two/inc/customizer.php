@@ -472,6 +472,34 @@ $wp_customize->add_control(
     )
   );
 
+  // Footer ///////////////////////////////////////////////////////////////
+  $wp_customize->add_section(
+    'sec_footer',
+    array(
+      'title' => 'Footer Settings',
+      'description' => 'Footer Settings'
+    )
+  );
+
+  $wp_customize->add_setting(
+    'set_footer_text',
+    array(
+      'type' => 'theme_mod',
+      'default' => '12 yılı aşkın deneyimimiz ve müşteri memnuniyetine gerçek anlamda odaklanmamızla, bir sonraki tadilat veya ev onarımınız için bize güvenebilirsiniz.',
+      'sanitize_callback' => 'sanitize_textarea_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_footer_text',
+    array(
+      'label' => 'Footer Information',
+      'description' => 'Please, type your text information here',
+      'section' => 'sec_footer',
+      'type' => 'textarea',
+    )
+  ); 
+
   // Copyright Section/////////////////////////////////////////////////////
   $wp_customize->add_section(
     'sec_copyright',
