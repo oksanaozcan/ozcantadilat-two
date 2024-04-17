@@ -1,116 +1,48 @@
 <div class="col-auto col-md-3 col-xl-2 px-sm-2 px-0 bg-body-tertiary">
     <div class="d-flex flex-column align-items-center align-items-sm-start pt-2 text-white min-vh-100" style="padding-left: 1rem;">                
-        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">                                                              
+        <ul class="nav nav-pills flex-column mb-sm-auto mb-0 align-items-center align-items-sm-start w-100" id="menu">     
+
+          <?php
+          $current_url = get_permalink();
+
+            $my_posts = get_posts( [
+              'numberposts' => -1,
+              'category_name' => 'services',
+              'orderby'     => 'date',
+              'order'       => 'ASC',                    
+              'post_type'   => 'post',
+              'suppress_filters' => true, // suppression of filters of SQL query change
+            ] );
+
+            foreach( $my_posts as $post ){
+              setup_postdata( $post );
+          ?>                
+
           <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
+            <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" 
+              class="btn align-middle w-100 text-start sidebar-link <?php 
+              if ($current_url == get_permalink($post->ID)) {
+                echo ' btn-warning';
+              } else {
+                echo ' btn-secondary';
+              }
+               ?>" 
+              style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;"
+            >
                 <small>
-                  <i class="fa-solid fa-key"></i> 
-                    <span class="ms-1 d-none d-sm-inline">Anahtar teslim</span>
+                  <i class="<?php the_field('sidebar_icon') ?>"></i> 
+                    <span class="ms-1 d-none d-sm-inline"><?php the_field('sidebar_title') ?></span>
                 </small>
                 <small>
                     <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
                 </small>
             </a>   
-          </li>         
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-house-user"></i>
-                    <span class="ms-1 d-none d-sm-inline">İç tadilat</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>       
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-people-roof"></i>
-                    <span class="ms-1 d-none d-sm-inline">Alçıpan</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>      
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-door-open"></i>
-                    <span class="ms-1 d-none d-sm-inline">Dış tadilat</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>      
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-faucet-drip"></i>
-                    <span class="ms-1 d-none d-sm-inline">Elektrik/tesisat</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>      
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-flag-usa"></i>
-                    <span class="ms-1 d-none d-sm-inline">Amer. sayding</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>     
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-building-shield"></i>
-                    <span class="ms-1 d-none d-sm-inline">Yalıtma/mantolama</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>     
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-grip"></i>
-                    <span class="ms-1 d-none d-sm-inline">Fayans</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>                      
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-paint-roller"></i>
-                    <span class="ms-1 d-none d-sm-inline">Boya/Badana</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>   
-          <li class="w-100 mb-1">
-            <a href="#" class="btn btn-secondary align-middle w-100 text-start" style="border-radius: 0; font-size: 14px; display: flex; justify-content: space-between;">
-                <small>
-                    <i class="fa-solid fa-shoe-prints"></i>
-                    <span class="ms-1 d-none d-sm-inline">Laminat</span>
-                </small>
-                <small>
-                    <i class="fa-solid fa-chevron-right ms-1 d-none d-sm-inline"></i>
-                </small>
-            </a>   
-          </li>   
+          </li>        
+
+          <?php        
+            }
+            wp_reset_postdata(); // reset $post                   
+          ?>        
         </ul>    
         
         <div class="bg-white text-dark text-center p-2 rounded mb-2 ms-1 d-none d-sm-block border border-1">                    

@@ -16,12 +16,13 @@
     $category = get_queried_object();
     
     if ($category->slug !== 'services') {
-      get_template_part('parts/lightbox');         
+      get_template_part('parts/lightbox');
+      echo '<div class="container bg-secondary-subtle py-4">';
+      get_template_part('parts/pagination');   
+      echo '</div>';
     } else {
       get_template_part('parts/all-services');     
-    }  
-
-    get_template_part('parts/pagination');     
+    }    
   ?>
 
 </section>
