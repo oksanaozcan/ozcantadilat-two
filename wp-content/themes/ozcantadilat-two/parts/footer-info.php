@@ -3,7 +3,7 @@
     <div class="row">
 
       <div class="col">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
               <i class="w-100 fa-solid fa-phone-volume"></i>
@@ -19,7 +19,7 @@
       </div>
 
       <div class="col">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
               <i class="fa-solid fa-map-location-dot"></i>
@@ -35,7 +35,7 @@
       </div>
 
       <div class="col">
-        <div class="d-flex align-items-center">
+        <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
               <i class="fa-solid fa-envelope"></i>

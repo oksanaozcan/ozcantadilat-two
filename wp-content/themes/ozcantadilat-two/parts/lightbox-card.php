@@ -1,10 +1,10 @@
-<div class="col mb-4">
+<div class="col mb-4" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
   <a class="link-offset-2 link-underline link-underline-opacity-0" href="<?php the_field('gallery_image'); ?>" data-toggle="lightbox" data-caption="Didim ve çevresinde tadilat tel: +90 553 872 03 19" data-gallery="category-gallery">
     <div class="card h-100">
-      <img src="<?php the_field('gallery_image'); ?>" class="card-img-top h-100" alt="<?php the_title(); ?>" style="object-fit: cover;">
+      <img src="<?php the_field('gallery_image'); ?>" class="card-img-top h-100" alt="<?php esc_attr(the_title()); ?>" style="object-fit: cover;">
       <div class="card-body">
-        <h6 class="card-title"><?php the_title(); ?></h6>
-        <p class="card-text"><?php the_content(); ?></p>
+        <h6 class="card-title"><?php esc_html(the_title()); ?></h6>
+        <p class="card-text"><?php esc_html(the_content()); ?></p>
       </div>                
     </div>
   </a>

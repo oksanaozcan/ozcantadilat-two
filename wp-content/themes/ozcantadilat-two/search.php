@@ -19,28 +19,34 @@ if(have_posts()):
 ?>
 
   <div class="col-12">
-    <div class="card mb-3">
-      <div class="row g-0">
-        <?php if (has_post_thumbnail()): ?>
-        <div class="col-md-4">
-          <img src="<?php the_post_thumbnail_url('full'); ?>" class="img-fluid rounded-start" alt="<?php the_title(); ?>">
-        </div>
-        <?php endif; ?>
-        <div class="col-md-8">
-          <div class="card-body">
-            <h5 class="card-title"><?php the_title(); ?></h5>
-            <p class="card-text"><?php the_excerpt(); ?></p>           
-            <?php if(has_category()): ?>
-              <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-list text-warning fs-6"></i>&nbsp; Kategoriler: <?php the_category(' '); ?></small></p>
-            <?php endif; ?>
-            <?php if(has_tag()): ?>
-            <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-tags text-warning fs-6"></i>&nbsp; Tags: <?php the_tags('', ', '); ?></small></p>
-            <?php endif; ?>
-            <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days text-warning fs-6"></i>&nbsp; Gönderildi: <?php the_date(); ?></small></p>
+   
+      <div class="card mb-3">
+        <div class="row g-0">
+          <?php if (has_post_thumbnail()): ?>
+          <div class="col-md-4">
+            <a class="text-reset text-decoration-none" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+              <img src="<?php the_post_thumbnail_url('full'); ?>" class="img-fluid rounded-start" style="object-fit: cover;" alt="<?php esc_html(the_title()); ?>">
+            </a>           
+          </div>
+          <?php endif; ?>
+          <div class="col-md-8">
+            <div class="card-body">
+              <a class="text-reset text-decoration-none" href="<?php echo esc_url(get_permalink($post->ID)); ?>">
+                <h5 class="card-title"><?php esc_html(the_title()); ?></h5>
+              </a>            
+              <p class="card-text"><?php the_excerpt(); ?></p>           
+              <?php if(has_category()): ?>
+                <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-list text-warning fs-6"></i>&nbsp; Kategoriler: <?php esc_html(the_category(' ')); ?></small></p>
+              <?php endif; ?>
+              <?php if(has_tag()): ?>
+              <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-tags text-warning fs-6"></i>&nbsp; Tags: <?php esc_html(the_tags('', ', ')); ?></small></p>
+              <?php endif; ?>
+              <p class="card-text"><small class="text-body-secondary"><i class="fa-solid fa-calendar-days text-warning fs-6"></i>&nbsp; Gönderildi: <?php the_date(); ?></small></p>
+            </div>
           </div>
         </div>
       </div>
-    </div>
+   
   </div>  
 
 <?php 

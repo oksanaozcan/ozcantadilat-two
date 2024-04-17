@@ -241,3 +241,24 @@ function save_custom_repeatable_accordion_meta_box($post_id) {
   }
 }
 add_action('save_post', 'save_custom_repeatable_accordion_meta_box');
+
+
+function exclude_categories_from_search($query) {
+  // run query only if we are searching
+  if ( !$query->is_search )
+      return $query;
+  
+  $term_ids = array( 18,19 );
+  $taxquery = array(
+      array(
+          'taxonomy' => 'category',
+          'field' => 'id',
+          'terms' => $term_ids,
+          'operator'=> 'NOT IN'
+      )
+  );
+
+  $query->set( 'tax_query', $taxquery );
+
+}
+add_action( 'pre_get_posts', 'exclude_categories_from_search' );
