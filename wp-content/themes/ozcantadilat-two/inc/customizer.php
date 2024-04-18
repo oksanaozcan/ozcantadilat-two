@@ -472,6 +472,131 @@ $wp_customize->add_control(
     )
   );
 
+  //About Page Content
+  $wp_customize->add_section(
+    'sec_about',
+    array(
+      'title' => 'About Page Settings',
+      'description' => 'About Page Settings'
+    )
+  );
+
+  $wp_customize->add_setting(
+    'set_about_1_title',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Merhaba, ben Erdal Özcan',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_about_1_title',
+    array(
+      'label' => 'First Title',
+      'description' => 'Please, type your title here',
+      'section' => 'sec_about',
+      'type' => 'text',
+    )
+  );  
+
+  $wp_customize->add_setting(
+    'set_about_image',
+    array(
+        'type' => 'theme_mod',
+        'sanitize_callback' => 'esc_url_raw',
+    )
+  );
+
+  $wp_customize->add_control(
+    new WP_Customize_Image_Control(
+        $wp_customize,
+        'about_image_control',
+        array(
+            'label' => 'Select Image',
+            'section' => 'sec_about',
+            'settings' => 'set_about_image',
+        )
+    )
+  );
+
+  $wp_customize->add_setting(
+    'set_about_text',
+    array(
+      'type' => 'theme_mod',
+      'default' => '2007 yılından buyana siz müşterilerimize tadilat ve dekorasyon dalında hizmet vermekteyiz. İşin büyüyü küçüğü olmaz prensibi ile müşterilerimizin her isteğini yerine getirmeye gayret gösteriyoruz. İş deneyimimi birçok büyük firmayla çalışarak geliştirdik. Bu firmalar dünya devleri arasında yer almaktadır Enka, Antyapı, Rönesans gibi firmalarla çalışıp büyük işler yaptık. Siz müşterilerimizi memnun edecek deneyime ve teknolojiye sahibiz sizlerle çalışmak bizim için bir onurdur. Didim/Akbük ve çevresinde siz müşterilerimize hizmet vermekteyiz Didim ve çevresinde birçok projeyi bitirdik ve halihazırda devam eden projelerimiz vardır bizi internet sayfamız sik müşteri yorumlarını yapılan işlerin adım adım takibini görebilirsiniz.',
+      'sanitize_callback' => 'sanitize_textarea_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_about_text',
+    array(
+      'label' => 'Information',
+      'description' => 'Please, type your text information here',
+      'section' => 'sec_about',
+      'type' => 'textarea',
+    )
+  ); 
+
+  $wp_customize->add_setting(
+    'set_about_card_1',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Kayıtsız ve bireysel yaklaşım, gerçek analiz, esnek ödeme sistemi, kaliteli malzemeler ve araçlarla çalışma prensibi.',
+      'sanitize_callback' => 'sanitize_textarea_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_about_card_1',
+    array(
+      'label' => 'First Card',
+      'description' => 'Please, type your text information here',
+      'section' => 'sec_about',
+      'type' => 'textarea',
+    )
+  ); 
+
+  $wp_customize->add_setting(
+    'set_about_card_2',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Eviniz sadece yenilenmekle kalmayacak, aynı zamanda modern ve estetik bir görünüme sahip olacak.',
+      'sanitize_callback' => 'sanitize_textarea_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_about_card_2',
+    array(
+      'label' => 'Second Card',
+      'description' => 'Please, type your text information here',
+      'section' => 'sec_about',
+      'type' => 'textarea',
+    )
+  ); 
+
+  $wp_customize->add_setting(
+    'set_about_2_title',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Sorularınız için ulaşın',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_about_2_title',
+    array(
+      'label' => 'Second Title',
+      'description' => 'Please, type your title here',
+      'section' => 'sec_about',
+      'type' => 'text',
+    )
+  );  
+
+
   // Footer ///////////////////////////////////////////////////////////////
   $wp_customize->add_section(
     'sec_footer',

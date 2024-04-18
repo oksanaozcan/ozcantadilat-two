@@ -43,24 +43,6 @@
             }
             wp_reset_postdata(); // reset $post                   
           ?>        
-        </ul>    
-        
-        <div class="bg-white text-dark text-center p-2 rounded mb-2 ms-1 d-none d-sm-block border border-1">                    
-          <div class="m-auto mb-2 fs-3 border border-warning rounded-circle d-flex justify-content-center align-items-center" style="width: 80px; height: 80px;">
-            <div>
-              <i class="fa-solid fa-wallet"></i>
-            </div>                     
-          </div>
-          <div>
-            <h4 class="fs-6">Maliet Hesaplayıcı</h4>
-            <p>
-              Yenileme veya kurulumun ilk maliyetini tahmin etmek için formumuzu kullanın.
-            </p>
-          </div>
-          <div>
-            <a class="btn btn-warning rounded-pill" href="#" role="button"><small>Bir teklif isteği</small></a>
-          </div>
-        </div>     
-
-    </div>
+        </ul>
+      </div>
 </div>
