@@ -3,6 +3,7 @@
     <div class="row justify-content-md-center px-4">    
 
     <?php
+      $delay_counter = 100;
         $service_icons = get_posts( [
           'numberposts' => -1,
           'category_name' => 'icon_service',
@@ -14,6 +15,8 @@
 
         foreach( $service_icons as $post ){
           setup_postdata( $post );
+          $delay = ($delay_counter === 100) ? 100 : 300;    
+          $delay_counter = ($delay_counter === 100) ? 300 : 100;
       ?>
 
       <div class="col-12 col-md-6"
@@ -21,6 +24,7 @@
         data-aos-offset="200" 
         data-aos-easing="ease-in-sine" 
         data-aos-duration="700"
+        data-aos-delay="<?php echo esc_attr($delay); ?>"
       >
         <div class="service-item">
           <div class="service-icon d-flex justify-content-center align-items-center">
@@ -33,10 +37,10 @@
             <div></div>
           </div>
           <div class="service-content mt-2">
-            <h6 class="text-center"><?php the_title(); ?></h6>
+            <h6 class="text-center"><?php esc_html(the_title()); ?></h6>
             <div class="service-line"></div>
             <div class="">
-              <p><?php the_content(); ?></p>                          
+              <p><?php esc_html(the_content()); ?></p>                          
             </div>                        
           </div>                  
         </div>

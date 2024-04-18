@@ -20,15 +20,15 @@
       ?>
 
         <div class="carousel-item <?php echo ($slide_index == 0) ? 'active' : ''; ?>">
-          <img src="<?php the_field('slider_image'); ?>" class="d-block w-100" alt="<?php the_title(); ?>">
+          <img src="<?php the_field('slider_image'); ?>" class="d-block w-100" alt="<?php esc_attr(the_title()); ?>">
           <div class="carousel-caption slide-animation">
             <div class="bg-dark p-4 text-light bg-opacity-75">
-              <h5><?php the_title(); ?></h5>
+              <h5><?php esc_html(the_title()); ?></h5>
             </div>              
             <div class="d-none d-md-block">
             <div class="slider-gap"></div>
               <div class="bg-dark p-4 text-light bg-opacity-50">
-                <p><?php the_content(); ?></p>
+                <p><?php esc_html(the_content()); ?></p>
 
                 <?php 
                   $field = get_field('slider_btn');

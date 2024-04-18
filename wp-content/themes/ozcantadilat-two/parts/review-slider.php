@@ -33,7 +33,7 @@
           <div class="w-100 carousel-item <?php echo ($slide_index == 0) ? 'active' : ''; ?>">
             <div class="w-100 d-flex flex-column justify-content-center align-items-center">
               <div class="w-75 bg-white px-4 py-4 border border-secondary border-2 rounded">
-                <q><?php the_excerpt(); ?></q>
+                <q><?php esc_html(the_excerpt()); ?></q>
               </div>              
               <div class="w-75">                
                 <div class="review-ornament border-end border-secondary border-2" style="height: 30px; width: 100px;"></div>
@@ -48,7 +48,7 @@
                 </div>
                 <div class="px-4">
                   <p>
-                    <?php the_title(); ?>
+                    <?php esc_html(the_title()); ?>
                   </p>
                 </div>
               </div>                          

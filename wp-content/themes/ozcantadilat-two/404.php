@@ -12,7 +12,7 @@ Template name: 404 Page.
       <div class="row py-4">
         <div class="col-12 col-md-6">            
           <?php 
-            $exclude_categories = array(18,19,20,40);
+            $exclude_categories = array(18,19,20,40,55);
 
             add_filter('widget_categories_args', function ($args) use ($exclude_categories) {
               $args['exclude'] = implode(',', $exclude_categories);

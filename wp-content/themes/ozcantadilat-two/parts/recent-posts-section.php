@@ -1,6 +1,6 @@
 <section>
   <div class="container bg-light px-4 py-4">        
-    <div class="row">
+    <div class="row pb-4">
       <div class="works-wrapper" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
         <h6 class="text-center text-uppercase">Son çalışmalar</h6>
         <div class="service-line"></div>

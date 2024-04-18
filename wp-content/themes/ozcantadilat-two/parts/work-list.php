@@ -16,7 +16,7 @@
     ?>
 
     <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="list-group-item list-group-item-action bg-secondary-subtle">
-      <i class="fa-solid fa-check"></i><span><?php the_title(); ?></span>
+      <i class="fa-solid fa-check"></i><span><?php esc_html(the_title()); ?></span>
     </a>             
   
     <?php

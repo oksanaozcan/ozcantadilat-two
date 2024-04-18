@@ -3,6 +3,7 @@
       <div class="row row-cols-md-auto justify-content-md-center">
 
         <?php
+          $delay_counter = 100;
           $my_posts = get_posts( [
             'numberposts' => -1,
             'category_name' => 'services',
@@ -14,11 +15,13 @@
 
           foreach( $my_posts as $post ){
             setup_postdata( $post );
+            $delay = ($delay_counter === 100) ? 100 : 200;    
+            $delay_counter = ($delay_counter === 100) ? 200 : 100;
         ?>      
 
           <div class="col my-2">
               <a href="<?php echo esc_url(get_permalink($post->ID)); ?>" class="link-offset-2 link-underline link-underline-opacity-0"
-                data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"
+                data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600" data-aos-delay="<?php echo esc_attr($delay); ?>"
               >
                   <div class="card" style="width: 18rem;">
                       <?php

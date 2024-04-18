@@ -248,7 +248,7 @@ function exclude_categories_from_search($query) {
   if ( !$query->is_search )
       return $query;
   
-  $term_ids = array( 18,19 );
+  $term_ids = array( 18,19,55 );
   $taxquery = array(
       array(
           'taxonomy' => 'category',

@@ -472,6 +472,53 @@ $wp_customize->add_control(
     )
   );
 
+  // Work stages
+  $wp_customize->add_section(
+    'sec_work_stages',
+    array(
+      'title' => 'Work Stages Settings',
+      'description' => 'Work Stages Settings'
+    )
+  );
+
+  $wp_customize->add_setting(
+    'set_work_stages_title',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Çalışma aşamaları',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_work_stages_title',
+    array(
+      'label' => 'Title',
+      'description' => 'Type your title here',
+      'section' => 'sec_work_stages',
+      'type' => 'text',
+    )
+  );  
+
+  $wp_customize->add_setting(
+    'set_work_stages_subtitle',
+    array(
+      'type' => 'theme_mod',
+      'default' => 'Rahat ve şeffaf işbirliği şeması',
+      'sanitize_callback' => 'sanitize_text_field'
+    )
+  );
+
+  $wp_customize->add_control(
+    'set_work_stages_subtitle',
+    array(
+      'label' => 'Subtitle',
+      'description' => 'Type your subtitle here',
+      'section' => 'sec_work_stages',
+      'type' => 'text',
+    )
+  );  
+
   //About Page Content
   $wp_customize->add_section(
     'sec_about',
