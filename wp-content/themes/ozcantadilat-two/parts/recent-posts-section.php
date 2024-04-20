@@ -37,8 +37,8 @@
     </div>
 
     <div class="row justify-content-center py-4">
-      <div class="col-2" data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-        <a class="btn btn-warning rounded-pill" href="<?php echo get_category_link( 22 ); ?>" role="button">Hepsini gör</a>
+      <div class="col-2 p-0" data-aos="slide-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
+        <a class="btn btn-warning rounded-pill text-nowrap" href="<?php echo get_category_link( 22 ); ?>" role="button">Hepsini gör</a>
       </div>                  
     </div> 
     

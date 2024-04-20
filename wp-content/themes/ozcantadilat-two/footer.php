@@ -1,7 +1,7 @@
     <footer class="site-footer">
         <div class="container">
           <div class="row bg-body-tertiary px-4 py-4">
-            <div class="col ">
+            <div class="col footer-col">
               <h4 class="fs-6">Hakkımızda</h4>
               <?php get_template_part('parts/two-colour-line'); ?>  
               <p>
@@ -12,8 +12,8 @@
                 <a target="_blank" href="<?php the_field('instagram'); ?>" class="btn btn-warning text-white" style="border-radius: 0;"><i class="fa-brands fa-instagram"></i></a>                
               </div>
             </div>          
-            <div class="col">
-              <h4 class="fs-6">Kategoriler</h4>
+            <div class="col footer-col">
+              <h4 class="fs-6 mt-4">Kategoriler</h4>
               <?php get_template_part('parts/two-colour-line'); ?>
               <div class="d-flex flex-wrap">
                   <?php
@@ -32,7 +32,7 @@
                   ?>
               </div>
             </div>
-            <div class="col">
+            <div class="col footer-col mt-4">
               <h4 class="fs-6">Tags</h4>
               <?php get_template_part('parts/two-colour-line'); ?>
               <div class="d-flex flex-wrap">

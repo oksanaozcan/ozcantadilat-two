@@ -295,6 +295,11 @@ body {
   align-items: center;
 }
 
+#main > section.text-services > div > div > div.col-12.col-md-3.g-0 > img {
+  height: -webkit-fill-available;
+  object-fit: cover;
+}
+
 /* Text services section*/
 .text-services h6 {
   font-size: 1.2rem;
@@ -427,6 +432,52 @@ body {
 
 .pagination > li > a {
   color: #6c757d !important;
+}
+
+.gt_float_switcher {
+  box-shadow: none !important;
+}
+
+/* Media */
+@media (width < 1200px) {
+  #gt_float_wrapper > div > div.gt-selected > div > span.gt-lang-code {
+    display: none;
+  }
+  .nturl {
+    font-size: 0;
+  }
+  #main > section.text-services > div > div > div.col-12.col-md-2.g-0 {
+    display: none;
+  }
+  .footer-col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }  
+}
+
+@media (width < 992px){
+  #main-carousel > div > div > div > div.d-none.d-md-block > div.bg-dark.p-4.text-light.bg-opacity-50 > p {
+    display: none;
+  }  
+  #main > section.footer-info > div > div {
+    font-size: small;
+  }
+  #main > section.footer-info > div > div i {
+    font-size: smaller;
+  }
+  .topbar-location {
+    text-wrap: wrap !important;
+  }
+  #top-bar > div > div > div.col-md-2.p-0.d-none.d-md-block > button > small {
+    font-size: small;
+  }
+}
+
+@media (width < 768px) {
+  #main > section.footer-info > div > div > div {
+    padding-top: 10px;
+    font-size: medium;
+  }  
 }
 
 /* end of all my styles */

@@ -20,16 +20,16 @@ Template name: Hakkımızda
       </div>     
 
       <div class="row">
-        <div class="col" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="100">
+        <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="100">
           <img src="<?php echo esc_url(get_theme_mod('set_about_image')); ?>" class="img-thumbnail" alt="about page image">
         </div>
-        <div class="col" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="200">
+        <div class="col-12 col-md-6" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="200">
           <p><?php echo esc_html(get_theme_mod('set_about_text')); ?></p>
         </div>
       </div> 
 
       <div class="row">
-        <div class="col">
+        <div class="col py-4">
           <div class="border d-flex align-items-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="100">
             <div class="mx-2">
               <i class="fa-solid fa-check text-warning fs-2"></i>
@@ -39,7 +39,7 @@ Template name: Hakkımızda
             </div>           
           </div>          
         </div>
-        <div class="col">
+        <div class="col py-4">
           <div class="border d-flex align-items-center" data-aos="zoom-in-up" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600"  data-aos-delay="200">
             <div class="mx-2">
               <i class="fa-solid fa-check text-warning fs-2"></i>

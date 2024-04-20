@@ -2,7 +2,7 @@
   <div class="container px-4 py-4">
     <div class="row">
 
-      <div class="col">
+      <div class="col-12 col-md-4">
         <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
@@ -18,7 +18,7 @@
         </div>                  
       </div>
 
-      <div class="col">
+      <div class="col-12 col-md-4">
         <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
@@ -34,7 +34,7 @@
         </div>                  
       </div>
 
-      <div class="col">
+      <div class="col-12 col-md-4">
         <div class="d-flex align-items-center" data-aos="zoom-in-left" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
           <div class="border border-light border-2 d-flex align-items-center rounded-circle" style="width: 60px; height: 60px;">
             <div class="w-100 text-center fs-4">
