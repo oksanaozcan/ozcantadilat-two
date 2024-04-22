@@ -9,7 +9,7 @@
                 <div class="row px-4 py-0">
                   <div class="col-12 col-md-5 g-0 pt-4">
                     <div class="works-wrapper" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-                      <h6 class="text-center">Ne yapıyoruz</h6>
+                      <h6 class="text-center">Hizmetlerimiz</h6>
                       <div class="service-line"></div>
                     </div>
                     <?php get_template_part('parts/work-list'); ?>                                       

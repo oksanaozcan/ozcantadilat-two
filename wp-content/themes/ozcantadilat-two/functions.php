@@ -7,15 +7,23 @@ require_once get_template_directory() . '/inc/custom_breadcrumbs.php';
 
 function ozcantadilattwo_load_scripts()
 {
-  wp_enqueue_style('ozcantadilattwo-bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0', 'all'); 
-  wp_enqueue_style('ozcantadilattwo-fontawesome-icons', get_template_directory_uri() . '/assets/fontawesome/css/all.css', array(), '1.0', 'all');  
-  wp_enqueue_style('ozcantadilattwo-aos-css', get_template_directory_uri() . '/assets/css/aos.css', array(), '1.0', 'all'); 
-  wp_enqueue_style('ozcantadilattwo-style', get_stylesheet_uri(), array(), '1.0', 'all');
+   // Enqueue styles (unchanged)
+   wp_enqueue_style('ozcantadilattwo-bootstrap-style', get_template_directory_uri() . '/assets/css/bootstrap.min.css', array(), '1.0', 'all'); 
+   wp_enqueue_style('ozcantadilattwo-fontawesome-icons', get_template_directory_uri() . '/assets/fontawesome/css/all.css', array(), '1.0', 'all');  
+   wp_enqueue_style('ozcantadilattwo-aos-css', get_template_directory_uri() . '/assets/css/aos.css', array(), '1.0', 'all'); 
+   wp_enqueue_style('ozcantadilattwo-style', get_stylesheet_uri(), array(), '1.0', 'all');
 
-  wp_enqueue_script('ozcantadilattwo-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), '1.0', true);
-  wp_enqueue_script('ozcantadilattwo-aos-js', get_template_directory_uri() . '/assets/js/aos.js', array(), '1.0', true);
-  wp_enqueue_script('ozcantadilattwo-bs5-lightbox-js', get_template_directory_uri() . '/assets/js/bs5-lightbox.js', array(), '1.0', true);
-  wp_enqueue_script('ozcantadilattwo-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true); 
+   // Enqueue scripts with defer or async attributes
+   wp_enqueue_script('ozcantadilattwo-bootstrap-js', get_template_directory_uri() . '/assets/js/bootstrap.bundle.min.js', array(), '1.0', true); // Keep this as true to maintain script execution order
+   
+   wp_enqueue_script('ozcantadilattwo-aos-js', get_template_directory_uri() . '/assets/js/aos.js', array(), '1.0', true); // You can add 'true' here for deferred loading
+   wp_script_add_data('ozcantadilattwo-aos-js', 'defer', true); // Add defer attribute
+
+   wp_enqueue_script('ozcantadilattwo-bs5-lightbox-js', get_template_directory_uri() . '/assets/js/bs5-lightbox.js', array(), '1.0', true); // You can add 'true' here for deferred loading
+   wp_script_add_data('ozcantadilattwo-bs5-lightbox-js', 'defer', true); // Add defer attribute
+
+   wp_enqueue_script('ozcantadilattwo-main-js', get_template_directory_uri() . '/assets/js/main.js', array(), '1.0', true); // You can add 'true' here for deferred loading
+   wp_script_add_data('ozcantadilattwo-main-js', 'defer', true); // Add defer attribute
 }
 add_action('wp_enqueue_scripts', 'ozcantadilattwo_load_scripts');
 

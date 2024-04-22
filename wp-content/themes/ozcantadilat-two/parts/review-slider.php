@@ -4,7 +4,7 @@
   <div class="row">
     <div class="col">
       <div class="works-wrapper" data-aos="zoom-in-right" data-aos-offset="200" data-aos-easing="ease-in-sine" data-aos-duration="600">
-        <h6 class="text-center text-uppercase">Görüşler</h6>
+        <h6 class="text-center text-uppercase">Yorumlar</h6>
         <div class="service-line mb-4"></div>
       </div>                    
     </div>
